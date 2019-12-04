@@ -4,7 +4,6 @@ let input;
 const numbers = [];
 let total = 0;
 let message;
-let userNumber;
 
 do {
     input = prompt('Введите пожалуйста число');
@@ -13,13 +12,13 @@ do {
     } else if (input === "") {
         alert('Вы ничего не ввели, попробуйте еще раз')
     } else {
-        userNumber = numbers.push((input));
+        numbers.push((input));
     }
 
 } while (input !== null)
 
 if (numbers.includes(null)) {
-    userNumber = numbers.pop(null)
+    numbers.pop(null)
     console.log(numbers);
 }
 
