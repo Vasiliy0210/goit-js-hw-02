@@ -1,18 +1,6 @@
 // ------------------task-05
 
-const checkForSpam = function (string) {
-  const stringToArray = string.split(' ');
-  // console.log(stringToArray)
-  let spamWordOne = 'sale';
-  let spamWordTwo = 'spam';
-
-  if (string.toUpperCase().includes(spamWordOne.toUpperCase()) || string.toUpperCase().includes(spamWordTwo.toUpperCase())) {
-    return true;
-  } else {
-    return false;
-  }
-
-}
+const checkForSpam = (string) => string.toLowerCase().includes("sale") || string.toLowerCase().includes("spam")
 
 console.log(checkForSpam('Latest technology news'));
 

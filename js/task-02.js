@@ -1,11 +1,14 @@
 // ------------------task-02
 
-const calculateEngravingPrice = function (message, pricePerWord) {
-    const wordsForEtching = message.split(' ').length;
-    let total = wordsForEtching * pricePerWord;
-    return total;
 
-}
+// const calculateEngravingPrice = function (message, pricePerWord) {
+//     return message.split(' ').length * pricePerWord;
+// }
+
+//-------- function arrow
+
+const calculateEngravingPrice = (message, pricePerWord) => message.split(' ').length * pricePerWord;
+
 
 console.log(
     calculateEngravingPrice(
